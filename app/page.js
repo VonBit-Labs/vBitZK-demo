@@ -80,16 +80,7 @@ export default function Home() {
         {/* Header */}
         <header className="header">
           <div className="logo-glow">
-            <svg width="72" height="72" viewBox="0 0 72 72" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <rect width="72" height="72" rx="18" fill="url(#logo-gradient)"/>
-              <path d="M36 16L52 56H20L36 16Z" fill="white" fillOpacity="0.9"/>
-              <defs>
-                <linearGradient id="logo-gradient" x1="0" y1="0" x2="72" y2="72" gradientUnits="userSpaceOnUse">
-                  <stop stopColor="#00ff88"/>
-                  <stop offset="1" stopColor="#00aa55"/>
-                </linearGradient>
-              </defs>
-            </svg>
+            <img src="/logo.png" alt="VonBit" className="logo-img" />
           </div>
           
           <h1 className="title">
@@ -448,6 +439,12 @@ export default function Home() {
           display: inline-block;
           margin-bottom: 24px;
           filter: drop-shadow(0 0 30px rgba(0, 255, 136, 0.4));
+        }
+
+        .logo-glow img {
+          width: 80px;
+          height: 80px;
+          border-radius: 20px;
         }
 
         .title {
